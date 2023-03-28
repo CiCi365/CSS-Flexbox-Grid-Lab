@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap%27');
+
+html {
+  box-sizing: border-box
+}
+
+/* The Universal Selector */
+*, /* All elements*/
+*::before, /* All ::before pseudo-elements */
+*::after { /* All ::after pseudo-elements */
+  /* height & width will now include border & padding by default
+     but can be over-ridden as needed */
+  box-sizing: inherit;
+}
+
+/* resets font size to be 62.5% of the user preference - 
+   in most browser configurations this will be 10px */
+:root {
+  font-size: 62.5%
+}
+
+body {
+  background-color: rgb(237, 134, 235);
+  font-family: 'Slackey', cursive;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  width: 300px;
+  background-color: rgb(241, 170, 214);
+  font-size: 2rem;
+  text-align: center;
+}
+
+.status {
+  position: absolute;
+  right: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: lime;
+  padding: 10px 20px 0 0;
+}
+
+img {
+  margin: 0 auto;
+  border-radius: 50%;
+  border: green 4px solid;
+}
+
+h1, p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.2rem;
+  padding: 8px 0;
+}
+
+.occupation {
+  background-color: rgb(51, 174, 76);
+  padding: 16px 0;
+}
+
+.brand {
+  display: none;
+}
+
+.offer {
+  padding: 16px 0;
+}
+
+.contact {
+  display: flex;
+}
+
+.contact > p {
+  height: 60px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact > p:first-child {
+  background-color: lime;
+}
+
+.contact > p:last-child {
+  background-color: rgb(51, 174, 76);;
+}
+
+.card {
+  position: relative;
+}
+
+.name {
+  font-size: 36px;
+}
+
+
+img {
+  margin: 0 auto;
+  width: 60%;
+}
+
+main {
+  width: 500px;
+}
+
